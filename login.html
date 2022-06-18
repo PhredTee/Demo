@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="./styles/login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://kit.fontawesome.com/781571eb05.js" crossorigin="anonymous"></script>
+        <title>ShopWithUs</title>
+    </head>
+</head>
+<body class="custom-container">
+    <header class="navbar-fixed">
+        <nav>
+            <div class="container nav-wrapper">
+                <a href='#' class="left logo">
+                    <span class="fa-solid fa-cart-shopping"></span>
+                    <span>ShopWithUs</span>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/index.html" class='nav-links'>Home</a></li>
+                    <li><a href="/login.html" class='nav-links'>Login</a></li>
+                    <li><a class='nav-links' href="#">About Us</a></li>
+                    <li><a class='nav-links' href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-overlay">
+        <div class="row" 
+            style='height: 100%; display: flex;'
+        >
+            <form class="col s12">
+                <div class="row" >
+                    <span class="fa-solid fa-lock"></span>
+                    <div class="input-field col s12 m12">
+                        <input id="last_name" type="text" class="validate"/>
+                        <label for="last_name">Email</label>
+                    </div>
+                    <div class="input-field col s12 m12">
+                        <input id="last_name" type="text" class="validate"/>
+                        <label for="last_name">Password</label>
+                    </div>
+                    <button type="submit" name="action">
+                        Login
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

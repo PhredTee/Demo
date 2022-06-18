@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:wght@300;400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-fixed nav {
+  background-color: #402E32;
+}
+
+nav .logo {
+  position: relative;
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+  color: #FFF5EA;
+}
+
+nav ul .nav-links {
+  font-family: "Noto Sans", sans-serif;
+  color: #FFF5EA;
+}
+
+body {
+  background: url(../assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.bg-overlay {
+  background: rgba(181, 135, 109, 0.4);
+  height: 100%;
+}
+
+.arrow {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  color: #402E32;
+  position: relative;
+}
+
+.arrow svg {
+  font-size: 3rem;
+}
+
+.catalog-wrapper {
+  background-color: #FFF5EA;
+  position: relative;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #FF6F00;
+  color: #FF6F00;
+  font-family: "Lobster", cursive;
+  margin: 0 !important;
+  padding: 2rem;
+}
+
+.img-flex {
+  padding: 3rem 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.img-flex .card {
+  background-color: #402E32 !important;
+}
+.img-flex .card-title {
+  font-size: 1.2rem !important;
+}
+.img-flex .card .card-image img {
+  width: 200px !important;
+  height: 250px !important;
+}
+
+.main-footer {
+  color: #FFF5EA;
+  background-color: #402E32;
+  padding: 1em;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.row-footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 1rem 0.5rem;
+  margin: 0 !important;
+}
+
+.row-footer .col {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: left;
+}
+
+h4 {
+  font-size: 1.3rem !important;
+  font-family: "Lobster", cursive;
+}
+
+h4:hover, li:hover {
+  color: #FF6F00;
+}
+
+.list-unstyled {
+  text-align: left;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.5rem;
+}
+
+.list-unstyled li {
+  padding: 0.5rem;
+}
+
+p {
+  font-size: 0.6rem !important;
+}
+
+.row-footer > p {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem !important;
+}
+
+.svg {
+  font-size: 1rem;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  color: #FFF5EA;
+  background-color: #FF6F00;
+  border: 2px solid #FF6F00;
+  border-radius: 20px;
+  font-weight: 500 !important;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem !important;
+}
+
+button:hover {
+  background-color: #FFF5EA;
+  color: #FF6F00;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-repeat: repeat;
+  }
+
+  .bg-overlay {
+    height: 90%;
+  }
+
+  .arrow .svg {
+    font-size: 7rem;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 80%;
+  }
+}/*# sourceMappingURL=index.css.map */
