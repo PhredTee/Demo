@@ -17,6 +17,9 @@ phases:
             - grep -Fq "About Us" login.html
             - grep -Fq "Contact Us" login.html
             - grep -Fq "ShopWithUs" login.html 
+            - npm install
+            - npm run lint
+            - npm test
     post_build:
         commands:
             - echo "we are in the post build phase"
