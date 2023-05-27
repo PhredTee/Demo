@@ -1,13 +1,6 @@
-FROM node:14
+FROM httpd:2.4
 
-WORKDIR /
 
-COPY package.json .
+# Copy the HTML and CSS files to html directory
+COPY . /usr/local/apache2/htdocs/
 
-RUN npm install
-
-COPY . .
-
-EXPOSE 80
-
-CMD [ "node" ]
