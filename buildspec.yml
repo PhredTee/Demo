@@ -23,7 +23,6 @@ phases:
             - grep -Fq "Contact Us" login.html
             - grep -Fq "ShopWithUs" login.html 
             - npm install
-            - npm run build
             
     post_build:
         commands:
