@@ -9,6 +9,10 @@ phases:
     pre_build:
         commands: 
             - echo "we are in the pre build phase"
+            - echo "Installing dependencies..."
+            - npm ci
+            - echo "Running code linting..."
+            - npx eslint --ext .js,.jsx Demo/
     build:
         commands:
             - echo "we are in the build block"
@@ -18,6 +22,7 @@ phases:
             - grep -Fq "Contact Us" login.html
             - grep -Fq "ShopWithUs" login.html 
             - npm install
+            - npm run build
             
     post_build:
         commands:
